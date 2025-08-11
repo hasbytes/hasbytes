@@ -2,32 +2,29 @@ import { Helmet } from "react-helmet-async";
 import { useLocation } from "react-router-dom";
 import Header from "@/components/site/Header";
 import Footer from "@/components/site/Footer";
-import ContactForm from "@/components/site/ContactForm";
+// import ContactForm from "@/components/site/ContactForm";
 import { Button } from "@/components/ui/button";
 
 const Index = () => {
   const location = useLocation();
-  const canonicalUrl = typeof window !== "undefined" ? `${window.location.origin}${location.pathname}` : "";
+  const siteDomain = "https://hasbytes.com";
+  const canonicalUrl = `${siteDomain}${location.pathname}`;
 
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "Ahmed Hasanovic — Influencer Marketing Agency",
-    url: canonicalUrl,
-    sameAs: [
-      "#", // LinkedIn
-      "#", // Instagram
-      "#", // Twitter/X
-    ],
+    name: "HasBytes — Influencer Marketing Agency",
+    url: siteDomain,
+    sameAs: [],
   };
 
   return (
     <div>
       <Helmet>
-        <title>Ahmed Hasanovic | Influencer Marketing Agency</title>
+        <title>HasBytes | Influencer Marketing Agency</title>
         <meta
           name="description"
-          content="Influencer marketing agency helping brands connect with creators on commission. Contact Ahmed Hasanovic."
+          content="HasBytes is an influencer marketing agency connecting brands with creators on commission. Contact us at ahmed.hasanovic@hasbytes.com."
         />
         <link rel="canonical" href={canonicalUrl} />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
@@ -45,7 +42,7 @@ const Index = () => {
                 <span className="text-gradient">Connecting brands</span> to the right creators
               </h1>
               <p className="mt-4 text-lg text-muted-foreground">
-                I’m Ahmed Hasanovic. I run a lean IMA focused on one thing: pairing brands with creators who drive measurable results — on a commission basis.
+                We’re HasBytes. We run a lean influencer marketing agency focused on one thing: pairing brands with creators who drive measurable results — on a commission basis.
               </p>
               <div className="mt-6 flex items-center gap-3">
                 <Button asChild>
@@ -74,7 +71,7 @@ const Index = () => {
             <h2 className="text-2xl font-semibold md:col-span-1">About the agency</h2>
             <div className="space-y-4 text-muted-foreground md:col-span-2">
               <p>
-                I help brands tap into trusted creator audiences. From sourcing and vetting to negotiations and tracking, I manage the full pipeline so you pay for outcomes — not promises.
+                We help brands tap into trusted creator audiences. From sourcing and vetting to negotiations and tracking, we manage the full pipeline so you pay for outcomes — not promises.
               </p>
               <p>
                 Lean, transparent, and aligned incentives. That’s how influencer marketing should work.
@@ -109,7 +106,7 @@ const Index = () => {
           <div className="container grid md:grid-cols-2 gap-10 items-start">
             <div>
               <h2 id="contact-heading" className="text-2xl font-semibold mb-2">Let’s talk</h2>
-              <p className="text-muted-foreground">Email placeholder for now. Use the form — I’ll reply within 24–48 hours. Or reach me via socials below.</p>
+              <p className="text-muted-foreground">Email us at <a href="mailto:ahmed.hasanovic@hasbytes.com" className="underline underline-offset-4">ahmed.hasanovic@hasbytes.com</a>. We typically reply within 24–48 hours. You can also visit <a href="https://hasbytes.com" className="underline underline-offset-4" rel="noopener noreferrer">hasbytes.com</a> or reach us via socials below.</p>
               <div className="mt-4 flex items-center gap-4 text-sm">
                 <a href="#" className="hover:underline">LinkedIn</a>
                 <a href="#" className="hover:underline">Instagram</a>
@@ -117,7 +114,15 @@ const Index = () => {
               </div>
             </div>
             <div>
-              <ContactForm />
+              <div className="rounded-lg border border-border bg-card p-6 shadow-[var(--shadow-elegant)]">
+                <h3 className="font-medium mb-2">Get in touch</h3>
+                <p className="text-sm text-muted-foreground">Prefer email? We’re just one message away.</p>
+                <div className="mt-4">
+                  <Button asChild>
+                    <a href="mailto:ahmed.hasanovic@hasbytes.com" aria-label="Email HasBytes">Email us</a>
+                  </Button>
+                </div>
+              </div>
             </div>
           </div>
         </section>
