@@ -15,7 +15,7 @@ const Index = () => {
     "@type": "Organization",
     name: "HasBytes — Influencer Marketing Agency",
     url: siteDomain,
-    sameAs: [],
+    sameAs: ["https://www.linkedin.com/in/ahmed-hasanovic-15905437a/","https://instagram.com/hasbytes","https://x.com/hasbytes","https://www.tiktok.com/@has_bytes"],
   };
 
   return (
@@ -106,11 +106,12 @@ const Index = () => {
           <div className="container grid md:grid-cols-2 gap-10 items-start">
             <div>
               <h2 id="contact-heading" className="text-2xl font-semibold mb-2">Let’s talk</h2>
-              <p className="text-muted-foreground">Email us at <a href="mailto:ahmed.hasanovic@hasbytes.com" className="underline underline-offset-4">ahmed.hasanovic@hasbytes.com</a>. We typically reply within 24–48 hours. You can also visit <a href="https://hasbytes.com" className="underline underline-offset-4" rel="noopener noreferrer">hasbytes.com</a> or reach us via socials below.</p>
+              <p className="text-muted-foreground">Brands and influencers can contact us at <a href="mailto:ahmed.hasanovic@hasbytes.com" className="underline underline-offset-4">ahmed.hasanovic@hasbytes.com</a>. We typically reply within 24–48 hours. You can also reach us via the socials below.</p>
               <div className="mt-4 flex items-center gap-4 text-sm">
-                <a href="#" className="hover:underline">LinkedIn</a>
-                <a href="#" className="hover:underline">Instagram</a>
-                <a href="#" className="hover:underline">Twitter/X</a>
+                <a href="https://www.linkedin.com/in/ahmed-hasanovic-15905437a/" className="hover:underline" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://instagram.com/hasbytes" className="hover:underline" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a href="https://x.com/hasbytes" className="hover:underline" target="_blank" rel="noopener noreferrer">X</a>
+                <a href="https://www.tiktok.com/@has_bytes" className="hover:underline" target="_blank" rel="noopener noreferrer">TikTok</a>
               </div>
             </div>
             <div>
