@@ -5,28 +5,21 @@ import Footer from "@/components/site/Footer";
 // import ContactForm from "@/components/site/ContactForm";
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hasbytes-logo.jpg";
-
 const Index = () => {
   const location = useLocation();
   const siteDomain = "https://hasbytes.com";
   const canonicalUrl = `${siteDomain}${location.pathname}`;
-
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "HasBytes — Influencer Marketing Agency",
     url: siteDomain,
-    sameAs: ["https://www.linkedin.com/in/ahmed-hasanovic-15905437a/","https://instagram.com/hasbytes","https://x.com/hasbytes","https://www.tiktok.com/@has_bytes"],
+    sameAs: ["https://www.linkedin.com/in/ahmed-hasanovic-15905437a/", "https://instagram.com/hasbytes", "https://x.com/hasbytes", "https://www.tiktok.com/@has_bytes"]
   };
-
-  return (
-    <div>
+  return <div>
       <Helmet>
         <title>HasBytes | Influencer Marketing Agency</title>
-        <meta
-          name="description"
-          content="HasBytes is an influencer marketing agency connecting brands with creators on commission. Contact us at ahmed.hasanovic@hasbytes.com."
-        />
+        <meta name="description" content="HasBytes is an influencer marketing agency connecting brands with creators on commission. Contact us at ahmed.hasanovic@hasbytes.com." />
         <link rel="canonical" href={canonicalUrl} />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
@@ -43,7 +36,7 @@ const Index = () => {
                 <h1 className="text-4xl md:text-5xl font-semibold leading-tight">
                   <span className="text-gradient">Connecting brands</span> to the right creators
                 </h1>
-                <img src={heroImage} alt="HasBytes" className="w-16 h-16 md:w-20 md:h-20 rounded-full flex-shrink-0" />
+                
               </div>
               <p className="mt-4 text-lg text-muted-foreground">
                 We’re HasBytes. We run a lean influencer marketing agency focused on one thing: pairing brands with creators who drive measurable results — on a commission basis.
@@ -56,15 +49,7 @@ const Index = () => {
               </div>
             </div>
             <div className="hidden md:block" aria-hidden>
-              <div className="rounded-lg border border-border bg-card p-10 shadow-[var(--shadow-elegant)]">
-                <div className="space-y-4">
-                  <div className="h-3 w-2/3 rounded bg-secondary" />
-                  <div className="h-3 w-1/2 rounded bg-secondary" />
-                  <div className="h-3 w-4/5 rounded bg-secondary" />
-                  <div className="h-3 w-3/5 rounded bg-secondary" />
-                </div>
-                <p className="sr-only">Sleek placeholder illustrating minimal design.</p>
-              </div>
+              
             </div>
           </div>
         </section>
@@ -134,8 +119,6 @@ const Index = () => {
       </main>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
