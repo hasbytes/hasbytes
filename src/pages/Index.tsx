@@ -41,12 +41,6 @@ const Index = () => {
               <p className="mt-4 text-lg text-muted-foreground">
                 We’re HasBytes. We run a lean influencer marketing agency focused on one thing: pairing brands with creators who drive measurable results — on a commission basis.
               </p>
-              <div className="mt-6 flex items-center gap-3">
-                <Button asChild>
-                  <a href="#contact" aria-label="Start a conversation">Start a conversation</a>
-                </Button>
-                <a href="#services" className="text-sm hover:underline">See services</a>
-              </div>
             </div>
             
           </div>
