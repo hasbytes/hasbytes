@@ -4,6 +4,7 @@ import Header from "@/components/site/Header";
 import Footer from "@/components/site/Footer";
 // import ContactForm from "@/components/site/ContactForm";
 import { Button } from "@/components/ui/button";
+import heroImage from "@/assets/hasbytes-logo.jpg";
 
 const Index = () => {
   const location = useLocation();
@@ -38,9 +39,12 @@ const Index = () => {
           <div className="container grid md:grid-cols-2 gap-10 items-center">
             <div>
               <p className="text-sm uppercase tracking-wider text-muted-foreground mb-3">Influencer Marketing Agency</p>
-              <h1 className="text-4xl md:text-5xl font-semibold leading-tight">
-                <span className="text-gradient">Connecting brands</span> to the right creators
-              </h1>
+              <div className="flex items-center gap-4 mb-4">
+                <h1 className="text-4xl md:text-5xl font-semibold leading-tight">
+                  <span className="text-gradient">Connecting brands</span> to the right creators
+                </h1>
+                <img src={heroImage} alt="HasBytes" className="w-16 h-16 md:w-20 md:h-20 rounded-full flex-shrink-0" />
+              </div>
               <p className="mt-4 text-lg text-muted-foreground">
                 We’re HasBytes. We run a lean influencer marketing agency focused on one thing: pairing brands with creators who drive measurable results — on a commission basis.
               </p>
