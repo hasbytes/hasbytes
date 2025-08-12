@@ -29,7 +29,7 @@ const Index = () => {
       <main id="home">
         {/* Hero */}
         <section className="section">
-          <div className="container grid md:grid-cols-2 gap-10 items-center">
+          <div className="container grid md:grid-cols-2 gap-10 items-center mx-0 px-0 my-0">
             <div>
               <p className="text-sm uppercase tracking-wider text-muted-foreground mb-3">Influencer Marketing Agency</p>
               <div className="flex items-center gap-4 mb-4">
@@ -48,11 +48,7 @@ const Index = () => {
                 <a href="#services" className="text-sm hover:underline">See services</a>
               </div>
             </div>
-            <div className="hidden md:flex items-center justify-center" aria-hidden>
-              <div className="w-64 h-64 rounded-full bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center backdrop-blur-sm border border-border/50">
-                <img src={logo} alt="" className="w-32 h-32 object-contain opacity-60" />
-              </div>
-            </div>
+            
           </div>
         </section>
 
