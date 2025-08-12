@@ -4,7 +4,7 @@ import Header from "@/components/site/Header";
 import Footer from "@/components/site/Footer";
 // import ContactForm from "@/components/site/ContactForm";
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/hasbytes-logo.jpg";
+import logo from "@/assets/hasbytes-logo-new.png";
 const Index = () => {
   const location = useLocation();
   const siteDomain = "https://hasbytes.com";
@@ -48,8 +48,10 @@ const Index = () => {
                 <a href="#services" className="text-sm hover:underline">See services</a>
               </div>
             </div>
-            <div className="hidden md:block" aria-hidden>
-              
+            <div className="hidden md:flex items-center justify-center" aria-hidden>
+              <div className="w-64 h-64 rounded-full bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center backdrop-blur-sm border border-border/50">
+                <img src={logo} alt="" className="w-32 h-32 object-contain opacity-60" />
+              </div>
             </div>
           </div>
         </section>
