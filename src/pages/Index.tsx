@@ -30,7 +30,7 @@ const Index = () => {
         {/* Hero */}
         <section className="section">
           <div className="container flex justify-center mx-0 px-0 my-0">
-            <div className="max-w-4xl w-full text-center">
+            <div className="max-w-4xl text-center">
               <p className="text-sm uppercase tracking-wider text-muted-foreground mb-3">Influencer Marketing Agency</p>
               <div className="mb-4">
                 <h1 className="text-4xl md:text-5xl font-semibold leading-tight">
