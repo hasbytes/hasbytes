@@ -29,13 +29,22 @@ const Index = () => {
       <main id="home">
         {/* Hero */}
         <section className="section">
-          <div className="container mx-auto px-4 flex justify-center">
-            <div className="max-w-4xl text-center">
-              <h1 className="text-5xl font-bold">Centered Test</h1>
-              <p className="mt-4">If you see me centered, Tailwind is working!</p>
+          <div className="container mx-auto px-4 flex justify-center my-0">
+          <div className="max-w-4xl text-center">
+            <p className="text-sm uppercase tracking-wider text-muted-foreground mb-3">
+              Influencer Marketing Agency
+            </p>
+            <div className="mb-4">
+              <h1 className="text-4xl md:text-5xl font-semibold leading-tight">
+                <span className="text-gradient">Connecting brands</span> to the right creators
+              </h1>
             </div>
-            
+            <p className="mt-4 text-lg text-muted-foreground">
+              We’re HasBytes. We run a lean influencer marketing agency focused on one thing: pairing brands with creators who drive measurable results — on a commission basis.
+            </p>
           </div>
+        </div>
+
         </section>
 
         {/* About */}
