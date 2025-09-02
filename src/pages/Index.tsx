@@ -29,7 +29,7 @@ const Index = () => {
       <main id="home">
         {/* Hero */}
         <section className="section">
-          <div className="container flex justify-center mx-0 px-0 my-0">
+          <div className="container mx-auto px-4 flex justify-center my-0">
             <div className="max-w-4xl text-center">
               <p className="text-sm uppercase tracking-wider text-muted-foreground mb-3">Influencer Marketing Agency</p>
               <div className="mb-4">
