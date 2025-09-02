@@ -33,7 +33,7 @@ const Index = () => {
             <div className="max-w-4xl w-full text-center">
               <p className="text-sm uppercase tracking-wider text-muted-foreground mb-3">Influencer Marketing Agency</p>
               <div className="flex items-center gap-4 mb-4">
-                <h1 className="text-4xl md:text-5xl font-semibold leading-tight">
+                <h1 className="text-4xl md:text-5xl font-semibold leading-tight text-center">
                   <span className="text-gradient">Connecting brands</span> to the right creators
                 </h1>
                 
